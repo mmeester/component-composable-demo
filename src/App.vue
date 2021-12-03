@@ -6,7 +6,7 @@
   
   <div class="component__outside">
     <h2>
-      uiState outside Component: {{ uiState}}
+      uiState outside Component: {{ uiState }}
     </h2>
     
     Why is the example component not updated by the button below?<br />
