@@ -11,6 +11,11 @@
     Why is the example component not updated by the button below?<br />
     <button @click="uiState = 'Changed outside component'">Change outside component</button>
   </div>
+  
+  <div class="information">
+    The repository of this demo can be found on: <a href="https://github.com/mmeester/component-composable-demo">https://github.com/mmeester/component-composable-demo</a><br />
+    The repository of the npm package can be found on: <a href="https://github.com/mmeester/component-composable">https://github.com/mmeester/component-composable</a>
+  </div>
 </template>
 
 <script setup>
@@ -21,6 +26,12 @@ const { uiState } = useExampleComposable();
 </script>
 
 <style>
+.component__inside,
+.component__outside,
+.information {
+  padding: 0.5rem;
+}
+
 .component__inside { 
   border: 1px solid red;
   margin-bottom: 1rem;
@@ -28,5 +39,10 @@ const { uiState } = useExampleComposable();
 
 .component__outside {
   border: 1px solid green;
+  margin-bottom: 3rem;
+}
+
+.information { 
+  border: 1px solid black;
 }
 </style>
